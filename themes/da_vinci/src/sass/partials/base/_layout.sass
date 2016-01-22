@@ -6,20 +6,26 @@
 
 body
   color: $color
-
+ 
 .layout-container
   +clearfix
   +container
-  width: 96%
   background: green
   +breakpoint($tablet)
     width: 90%
     background: red
   +breakpoint($desk)
-    width: 84%
+    width: 92%
     background: yellow
   +breakpoint($max-width)
     background: blue
+    transform: scale(1.05)
+  +breakpoint($large-width)
+    background: azure
+    transform: scale(2)
+  +breakpoint($monster)
+    background: pink
+    transform: scale(4)
 
 
 .layout-one-sidebar.layout-sidebar-first

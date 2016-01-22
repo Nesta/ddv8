@@ -373,7 +373,7 @@ th {
  */
 head:before {
   position: absolute;
-  top: 70px;
+  top: 120px;
   right: 0; }
 
 /**
@@ -388,7 +388,6 @@ body {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  width: 96%;
   background: green; }
   .layout-container::after {
     clear: both;
@@ -441,11 +440,23 @@ body {
       background: red; } }
   @media (min-width: 64em) {
     .layout-container {
-      width: 84%;
+      width: 92%;
       background: yellow; } }
   @media (min-width: 75em) {
     .layout-container {
-      background: blue; } }
+      background: blue;
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); } }
+  @media (min-width: 82em) {
+    .layout-container {
+      background: azure;
+      -webkit-transform: scale(2);
+              transform: scale(2); } }
+  @media (min-width: 118.75em) {
+    .layout-container {
+      background: pink;
+      -webkit-transform: scale(4);
+              transform: scale(4); } }
 
 @media (min-width: 44em) {
   .layout-one-sidebar.layout-sidebar-first .layout-content {
@@ -516,7 +527,7 @@ body {
   color: #1abc9c;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.3; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #16a085;
@@ -524,22 +535,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Advent Pro"; }
 
 h1 {
-  font-size: 2.813em; }
-
-h2 {
-  font-size: 2.074em; }
-
-h3 {
-  font-size: 1.728em; }
-
-h4 {
-  font-size: 1.44em; }
-
-h5 {
-  font-size: 1.2em; }
+  line-height: 0.8;
+  margin: 0.77em 0; }
 
 p {
-  margin-bottom: 1em; }
+  margin-bottom: 1.5em;
+  line-height: 1.5; }
 
 a {
   color: #686257;
@@ -548,7 +549,9 @@ a {
     color: #ABA280;
     text-decoration: none; }
 
-/* No files to import found in partials//content//** */
+.node__links {
+  line-height: 1.5; }
+
 /* No files to import found in partials//components//** */
 
 /*# sourceMappingURL=style.css.map */
