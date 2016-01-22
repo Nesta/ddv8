@@ -4,16 +4,23 @@
  *  Define the initial layout of the regions in page.tpl.php
  */
 
+body
+  color: $color
+
 .layout-container
-  +container
   +clearfix
+  +container
+  width: 96%
   background: green
   +breakpoint($tablet)
+    width: 90%
     background: red
   +breakpoint($desk)
+    width: 84%
     background: yellow
   +breakpoint($max-width)
     background: blue
+
 
 .layout-one-sidebar.layout-sidebar-first
   .layout-content

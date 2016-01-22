@@ -381,11 +381,19 @@ head:before {
  *  Layouts
  *  Define the initial layout of the regions in page.tpl.php
  */
+body {
+  color: #1abc9c; }
+
 .layout-container {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  width: 96%;
   background: green; }
+  .layout-container::after {
+    clear: both;
+    content: "";
+    display: table; }
   .layout-container:after {
     content: " ";
     display: block;
@@ -427,15 +435,13 @@ head:before {
       background-origin: content-box, border-box;
       background-clip: content-box, border-box;
       background-position: left top; }
-  .layout-container::after {
-    clear: both;
-    content: "";
-    display: table; }
   @media (min-width: 44em) {
     .layout-container {
+      width: 90%;
       background: red; } }
   @media (min-width: 64em) {
     .layout-container {
+      width: 84%;
       background: yellow; } }
   @media (min-width: 75em) {
     .layout-container {
