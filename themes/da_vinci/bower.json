@@ -1,0 +1,25 @@
+{
+  "name": "Emergya Gulp Sass Workflow",
+  "version": "0.0.1",
+  "authors": [
+    "Nesta Guerrero <nguerrero@emergya.es>",
+    "Rafael Vergara <rvergara@emergya.com>",
+    "Enno Langelotz <enno@langelotz.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "compass-mixins": "0.12.3",
+    "susy": "~2.2.7",
+    "breakpoint-sass": "~2.6.1",
+    "normalize-libsass": "~1.0.3",
+    "bourbon": "~4.2.6"
+
+  }
+}

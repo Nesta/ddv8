@@ -1,0 +1,33 @@
+{
+  "name": "compass-mixins",
+  "version": "0.12.3",
+  "authors": [
+    "Guillaume Balaine <igosuki@gmail.com>"
+  ],
+  "description": "Compass stylesheets",
+  "main": "lib/_compass.scss",
+  "keywords": [
+    "compass",
+    "mixins",
+    "sass",
+    "css3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/Igosuki/compass-mixins",
+  "_release": "0.12.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.12.3",
+    "commit": "df18947d5ae12cf1ccd9471734063e37e2b02f47"
+  },
+  "_source": "git://github.com/Igosuki/compass-mixins.git",
+  "_target": "0.12.3",
+  "_originalSource": "compass-mixins"
+}

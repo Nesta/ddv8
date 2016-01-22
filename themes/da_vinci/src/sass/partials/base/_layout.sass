@@ -1,0 +1,49 @@
+/**
+ *  @file
+ *  Layouts
+ *  Define the initial layout of the regions in page.tpl.php
+ */
+
+.layout-container
+  +container
+  +clearfix
+  background: green
+  +breakpoint($tablet)
+    background: red
+  +breakpoint($desk)
+    background: yellow
+  +breakpoint($max-width)
+    background: blue
+
+.layout-one-sidebar.layout-sidebar-first
+  .layout-content
+    +breakpoint($tablet)
+      +span(9 of 12 last)
+  .layout-sidebar-first
+    +breakpoint($tablet)
+      +span(3 of 12 first)
+
+.layout-one-sidebar.layout-sidebar-second
+  .layout-content
+    +breakpoint($tablet)
+      +span(9 of 12 first)
+  .layout-sidebar-second
+    +breakpoint($tablet)
+      +span(3 of 12 last)
+  
+.layout-two-sidebars
+  .layout-content
+    +breakpoint($tablet)
+      +span(9 of 12 last)
+    +breakpoint($desk)
+      +span(isolate 6 at 4 of 12)
+  .layout-sidebar-first
+    +breakpoint($tablet)
+      +span(3 of 12 first)
+  .layout-sidebar-second
+    +breakpoint($tablet)
+      float: none
+      clear: both
+    +breakpoint($desk)
+      +span(3 of 12 last)
+      clear: none
