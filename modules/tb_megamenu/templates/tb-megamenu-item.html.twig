@@ -3,7 +3,7 @@
     {% if  item_config['xicon'] %}
       <i class="{{ item_config['xicon'] }}"></i>
     {% endif %}
-    {{ link['title']|t }}
+    {{ link.title_translate|t }}
     {% if submenu and block_config['auto-arrow'] %}
       <span class="caret"></span>
     {% endif %}

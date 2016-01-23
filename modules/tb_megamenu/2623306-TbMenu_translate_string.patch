@@ -1,0 +1,25 @@
+diff --git a/tb_megamenu.module b/tb_megamenu.module
+index 2291b01..6bb0bb1 100644
+--- a/tb_megamenu.module
++++ b/tb_megamenu.module
+@@ -473,6 +473,7 @@ function template_preprocess_tb_megamenu_item(&$vars) {
+   $item = $vars['item'];
+   $vars['link'] = $item->link->getPluginDefinition();
+   $vars['link']['url'] = $item->link->getUrlObject()->toString();
++  $vars['link']['title_translate'] = $item->link->getTitle();
+   $plugin_id = $vars['link']['id'];
+   $trail = $vars['trail'];
+   $menu_config = $vars['menu_config'];
+diff --git a/templates/tb-megamenu-item.html.twig b/templates/tb-megamenu-item.html.twig
+index 8fdb407..846a68c 100644
+--- a/templates/tb-megamenu-item.html.twig
++++ b/templates/tb-megamenu-item.html.twig
+@@ -3,7 +3,7 @@
+     {% if  item_config['xicon'] %}
+       <i class="{{ item_config['xicon'] }}"></i>
+     {% endif %}
+-    {{ link['title']|t }}
++    {{ link.title_translate|t }}
+     {% if submenu and block_config['auto-arrow'] %}
+       <span class="caret"></span>
+     {% endif %}

@@ -473,6 +473,7 @@ function template_preprocess_tb_megamenu_item(&$vars) {
   $item = $vars['item'];
   $vars['link'] = $item->link->getPluginDefinition();
   $vars['link']['url'] = $item->link->getUrlObject()->toString();
+  $vars['link']['title_translate'] = $item->link->getTitle();
   $plugin_id = $vars['link']['id'];
   $trail = $vars['trail'];
   $menu_config = $vars['menu_config'];
