@@ -15,7 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "compass-mixins": "0.12.3",
     "susy": "~2.2.7",
     "breakpoint-sass": "~2.6.1",
     "normalize-libsass": "~1.0.3",

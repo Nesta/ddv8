@@ -447,14 +447,7 @@ body {
       background: blue; } }
   @media (min-width: 82em) {
     .layout-container {
-      background: azure;
-      -webkit-transform: scale(1.05);
-              transform: scale(1.05); } }
-  @media (min-width: 118.75em) {
-    .layout-container {
-      background: pink;
-      -webkit-transform: scale(3);
-              transform: scale(3); } }
+      background: azure; } }
 
 @media (min-width: 44em) {
   .layout-one-sidebar.layout-sidebar-first .layout-content {
