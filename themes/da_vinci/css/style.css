@@ -367,20 +367,11 @@ th {
  *  @file
  *  Sass Vars
  */
-/**
- *  @file
- *  Susy config declaration
- */
 head:before {
   position: absolute;
-  top: 120px;
-  right: 0; }
+  right: 0;
+  top: 120px; }
 
-/**
- *  @file
- *  Layouts
- *  Define the initial layout of the regions in page.tpl.php
- */
 body {
   color: #1abc9c; }
 
@@ -444,7 +435,7 @@ body {
       background: yellow; } }
   @media (min-width: 75em) {
     .layout-container {
-      background: blue; } }
+      background: #f4f4f4; } }
   @media (min-width: 82em) {
     .layout-container {
       background: azure; } }

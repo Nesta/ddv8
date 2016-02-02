@@ -1,9 +1,11 @@
-//Configuration
+'use strict';
+
 var host = 'ddv8.local';
 var sourceDirSass = './src/sass';
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var debug = require('gulp-debug');
 var sourcemaps = require('gulp-sourcemaps');
 var cssGlobbing = require('gulp-css-globbing');
 var autoprefixer = require('gulp-autoprefixer');
@@ -27,6 +29,7 @@ gulp.task('sass', function (){
         filename_extension: false
       }
     }))
+    .pipe(debug({title: 'unicorn:'}))
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox >= 20']}))

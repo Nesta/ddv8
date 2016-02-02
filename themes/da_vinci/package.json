@@ -2,9 +2,9 @@
   "name": "emergya-gulp-sass",
   "version": "0.0.1",
   "description": "Gulp Sass Workflow Emergya",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/Emergya/emergya-gulp-sass"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Emergya/emergya-gulp-sass"
   },
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,9 @@
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-css-globbing": "^0.1.8",
+    "gulp-debug": "^2.1.2",
     "gulp-sass": "^2.1.1",
+    "gulp-sass-lint": "^1.1.1",
     "gulp-sourcemaps": "^1.6.0"
   },
   "depencencies": {
